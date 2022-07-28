@@ -9,14 +9,158 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- Styles -->
+    <style>
+        #navigation {
+            width: 666px;
+        }
+
+        .dark:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: black;
+            opacity: 0.6;
+        }
+
+        .extra-caption-fix {
+            top: 40%;
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body>
+    <!-------------- NAVBAR --------------->
     <header>
-        <section class="container">
-            <p>AAAAAAAAAAAAAAAAAAAAAAAA</p>
+        <section class="container d-flex justify-content-between py-4">
+            <h1>MasterEd</h1>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse fixed" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between" id="navigation">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Deals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Success</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Register</a>
+                            </li>
+
+                            <!----------------- Dropdown CODE for later --------------->
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <a href="" class="btn btn-outline-primary h-100">Register</a>
         </section>
     </header>
+
+
+
+    <!------------------------- CAROUSEL ------------------------->
+    <div class="container mb-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item dark active">
+                    <img src="images/cover/cover-1.png" class="d-block img-fluid" alt="...">
+
+                    <div
+                        class="carousel-caption d-none d-md-block w-50 ms-auto me-auto position-absolute extra-caption-fix">
+                        <h1>Learn Digitally</h1>
+                        <p class="py-3 text-light">Take this opportunity by the reins and learn online,<br>at your own
+                            convenience for affordable prices.</p>
+                        <a href="" class="btn btn-primary">Start Now</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item dark">
+                    <img src="images/cover/cover-2.jpg" class="d-block img-fluid" alt="...">
+
+                    <div
+                        class="carousel-caption d-none d-md-block w-50 ms-auto me-auto position-absolute extra-caption-fix">
+                        <h1>Learn Digitally</h1>
+                        <p class="py-3 text-light">Take this opportunity by the reins and learn online,<br>at your own
+                            convenience for affordable prices.</p>
+                        <a href="" class="btn btn-primary">Start Now</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item dark">
+                    <img src="images/cover/cover-3.jpg" class="d-block img-fluid" alt="...">
+
+                    <div
+                        class="carousel-caption d-none d-md-block w-50 ms-auto me-auto position-absolute extra-caption-fix">
+                        <h1>Learn Digitally</h1>
+                        <p class="py-3 text-light">Take this opportunity by the reins and learn online,<br>at your own
+                            convenience for affordable prices.</p>
+                        <a href="" class="btn btn-primary">Start Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- <div class="container w-100 h-100">
+                <div class="container-fluid d-flex justify-content-center align-items-center flex-column bg-secondary">
+                    <h1 class="text-light">Learn Digitally</h1>
+                    <p class="py-3 text-light">Take this opportunity by the reins and learn online, at your own
+                        convenience for
+                        affordable prices.
+                    </p>
+                    <button class="btn text-light btn-primary " type="submit"><strong>Start Now</strong></button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
 
 
 
