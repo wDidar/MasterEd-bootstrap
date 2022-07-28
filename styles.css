@@ -1,0 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#navigation {
+    width: 666px;
+}
+
+.dark:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+}
+
+.extra-caption-fix {
+    top: 40%;
+    z-index: 1;
+}
+
+.modal-div {
+    width: 1320px;
+    height: 300px;
+}
+
+.company-group {
+    height: 22px;
+}
+
+.footer-stuff {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* ----------------MEDIA QUERIES---------------- */
+
+
+
+/* small, sm => 576px */
+@media (min-width: 576px) {}
+
+
+/* medium, md => 768px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-media {
+        padding-top: 50px;
+        margin: 0;
+    }
+
+    .carousel-caption-media {
+        top: 20%;
+        display: flex;
+        align-items: center !important;
+    }
+
+    .carousel-caption-media p {
+        margin: 0;
+        padding-bottom: .5rem !important;
+        width: 400px;
+        text-align: center;
+    }
+
+    .modal-media {
+        display: flex;
+        justify-content: center !important;
+    }
