@@ -8,7 +8,7 @@ body {
 }
 
 .carousel-media {
-    height: 400px;
+    height: 800px;
 }
 
 .dark:after {
@@ -53,7 +53,7 @@ body {
 @media (max-width: 767px) {
     .carousel-media {
         padding-top: 70px;
-        height: 200px;
+        height: 220px;
     }
 
     .carousel-caption-media {
@@ -102,7 +102,7 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
     .carousel-media {
         padding-top: 50px;
-        height: 350px;
+        height: 500px;
     }
 
     .carousel-caption-media {
