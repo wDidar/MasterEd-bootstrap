@@ -7,6 +7,10 @@ body {
     width: 666px;
 }
 
+.carousel-media {
+    height: 400px;
+}
+
 .dark:after {
     content: "";
     display: block;
@@ -46,14 +50,59 @@ body {
 
 
 /* small, sm => 576px */
-@media (min-width: 576px) {}
+@media (max-width: 767px) {
+    .carousel-media {
+        padding-top: 70px;
+        height: 200px;
+    }
+
+    .carousel-caption-media {
+        top: 10px;
+        width: 100px;
+    }
+
+    .carousel-caption-media h1 {
+        font-size: 15px;
+    }
+
+    .carousel-caption-media p {
+        font-size: 10px;
+        padding-top: 2px !important;
+        padding-bottom: 2px;
+        margin-bottom: 0;
+    }
+
+    .carousel-caption-media .btn {
+        font-size: 10px;
+    }
+
+    .card-media {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .card-pic-media {
+        height: 320px;
+    }
+
+    .card-pic-media img {
+        height: 300px !important;
+        max-width: 500px !important;
+    }
+
+    .modal-media .join-text {}
+
+    .unwanted-media {
+        display: none !important;
+    }
+}
 
 
 /* medium, md => 768px */
 @media (min-width: 768px) and (max-width: 991px) {
     .carousel-media {
         padding-top: 50px;
-        margin: 0;
+        height: 350px;
     }
 
     .carousel-caption-media {
@@ -73,3 +122,8 @@ body {
         display: flex;
         justify-content: center !important;
     }
+
+    .unwanted-media {
+        display: none !important;
+    }
+}
